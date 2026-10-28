@@ -1,0 +1,2134 @@
+{
+  "categories": [
+    {
+      "id": "egg-dosas",
+      "name": "Classic & Spiced Egg Dosas",
+      "description": "Crispy golden rice crepes layered with seasoned eggs, Andhra karam, and coastal ghee roasts.",
+      "icon": "🥞"
+    },
+    {
+      "id": "idly-vada",
+      "name": "Idly & Vada",
+      "description": "Hot steamed idlies, crispy vadas, pepper fry and ghee roast South Indian morning classics.",
+      "icon": "🥟"
+    },
+    {
+      "id": "english-breakfast",
+      "name": "English Breakfast (2 Eggs)",
+      "description": "Farm-fresh 2-egg preparations: Sunny side up, poached, scramble, bhurji and Benedict.",
+      "icon": "🍳"
+    },
+    {
+      "id": "omelets-frittatas",
+      "name": "The Omelet Connoisseur",
+      "description": "French butter omelets, fluffy cheese skillets, Goan Ros, garden harvest and Spanish frittatas.",
+      "icon": "🧀"
+    },
+    {
+      "id": "starters-fusion",
+      "name": "Starters & Fusion Bites",
+      "description": "Wok-tossed Manchurian, Egg 65, Mangalorean ghee roasts, butter garlic and crispy peri-peri.",
+      "icon": "🔥"
+    },
+    {
+      "id": "breakfast-platters",
+      "name": "Signature Breakfast Platters",
+      "description": "Hearty morning platters with sausages, eggs to order, hash browns, pancakes and French toast.",
+      "icon": "🍽️"
+    },
+    {
+      "id": "egg-specials",
+      "name": "Egg Specials & Gratins",
+      "description": "Kashmiri eggs, Middle Eastern Shakshuka, Egg Pani Puri, Surat egg fry and cheesy gratins.",
+      "icon": "⭐"
+    },
+    {
+      "id": "chef-specials",
+      "name": "Chef Special Inventions",
+      "description": "Surti Egg Locha, Egg Loziz, Scotch eggs, Smoky BBQ bites, tacos and savory French toast.",
+      "icon": "👨‍🍳"
+    },
+    {
+      "id": "signature-rolls",
+      "name": "Signature Rolls",
+      "description": "Flaky toasted parathas loaded with egg ghee roast and melted mozzarella.",
+      "icon": "🌯"
+    },
+    {
+      "id": "soups-broths",
+      "name": "Soups & Broths",
+      "description": "Silky egg drop soups, spicy Manchow, Indo-Chinese Lung Fung, and Mexican poached egg broth.",
+      "icon": "🥣"
+    },
+    {
+      "id": "artisan-egg-rice",
+      "name": "Artisan Egg Rice Selection",
+      "description": "Bangalore street egg rice, Japanese Omurice, Korean Gyeran Bap, Mexican and Palak egg rice.",
+      "icon": "🍚"
+    },
+    {
+      "id": "street-noodles",
+      "name": "Wok-Fried Street Noodles",
+      "description": "Indo-Chinese Manchurian noodles, aromatic Thai basil and classic Hakka noodles.",
+      "icon": "🍜"
+    },
+    {
+      "id": "maggi-chronicles",
+      "name": "The Maggi Chronicles",
+      "description": "Silky Egg Drop Maggi, fiery Szechwan dry, crispy fry and our signature Maggi Egg Frittata.",
+      "icon": "🍲"
+    },
+    {
+      "id": "burgers-sandwiches",
+      "name": "Craft Burgers & Sandwiches",
+      "description": "Crispy egg patty burgers, 4-egg smash burgers, Korean Gilgeori toast and chili cheese toasties.",
+      "icon": "🍔"
+    },
+    {
+      "id": "pizzas-sizzlers",
+      "name": "Gourmet Pizzas & Sizzlers",
+      "description": "Chettinad and Surti Ghotala pizzas, plus sizzling Chinese egg & Mexican paneer platters.",
+      "icon": "♨️"
+    },
+    {
+      "id": "salads-meals",
+      "name": "Salads & Main Meals",
+      "description": "Nicoise & Caesar egg salads, dum biryanis, Egg Kothu Parotta and unlimited Andhra thali.",
+      "icon": "🥗"
+    },
+    {
+      "id": "sweets-desserts",
+      "name": "Sweets & Desserts",
+      "description": "Classic Cream Caramel, Bread Butter Pudding with hot chocolate, Bombe Alaska & Blueberry Cheesecake.",
+      "icon": "🍰"
+    },
+    {
+      "id": "beverages-coolers",
+      "name": "Coolers, Shakes & Goli Sodas",
+      "description": "Mojitos, thickshakes, authentic nostalgic Goli Sodas (Jeera, Kala Khatta, Limbu, Nannari).",
+      "icon": "🥤"
+    },
+    {
+      "id": "hot-beverages",
+      "name": "Hot Beverages",
+      "description": "Authentic freshly brewed chai, ginger tea, masala tea, and traditional hot filter coffee.",
+      "icon": "☕"
+    }
+  ],
+  "totalCount": 154,
+  "dishes": [
+    {
+      "id": "dish-001",
+      "name": "Egg Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "The timeless classic—crispy golden rice crepe layered with a perfectly seasoned whisked egg.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-002",
+      "name": "Egg Karam Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Infused with a fiery, traditional Andhra spicy chili-garlic paste smeared over a soft egg base.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-003",
+      "name": "Egg Pudina Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Zesty and aromatic, layered with a fresh, cooling mint-and-coriander herbal spread.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-004",
+      "name": "Egg Khali Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Soft, spongy, pancake-style thick dosas layered beautifully with a rich egg wash.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-005",
+      "name": "Egg Peri Peri Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "A fiery modern fusion featuring vibrant African birds-eye chili seasoning over a classic egg dosa.",
+      "tags": [
+        "Chef's Special",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-006",
+      "name": "Egg Crumble Dosa (Kheema)",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Stuffed to the brim with spiced, minced egg bhurji reminiscent of authentic street-style kheema.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-007",
+      "name": "Paneer / Egg Bhurji Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "A delicious combination of scrambled eggs tossed with onions, green chilies, and fresh cilantro inside a crisp dosa.",
+      "tags": [
+        "High Protein",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-008",
+      "name": "Egg Ghee Roast Dosa (With 2 Half Boiled)",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Rich, aromatic ghee roast crepe served with an indulgent topping of two perfectly prepared half-boiled eggs.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 2
+    },
+    {
+      "id": "dish-009",
+      "name": "Egg Pesarattu Dosa (After Gyms)",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "High-protein whole green gram lentil crepe packed with wholesome egg—perfect for post-workout recovery.",
+      "tags": [
+        "High Protein"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-010",
+      "name": "Appam Dosa With Ghee Roast ( 2 pieces )",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Soft-centered, lace-edged traditional appam-inspired crepe served alongside rich, aromatic ghee roast spread.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 2
+    },
+    {
+      "id": "dish-011",
+      "name": "Egg Appam ( 2 pieces)",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Traditional fermented rice and coconut milk hopper with a whole soft-cooked egg nestled right at the center.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 2
+    },
+    {
+      "id": "dish-012",
+      "name": "Neer Dosa With Ghee Roast ( 3 pieces )",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Delicate, lace-thin, melt-in-the-mouth coastal rice crepes paired elegantly with an aromatic egg ghee roast.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-013",
+      "name": "Egg Paneer Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "An indulgent blend of protein-packed shredded paneer cottage cheese and spiced egg over a crispy crepe.",
+      "tags": [
+        "High Protein"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-014",
+      "name": "Egg Mushroom Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "Earthy, juicy sautéed mushrooms paired beautifully with a fluffy egg layer inside a golden dosa.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-015",
+      "name": "Egg Tofu Dosa",
+      "categoryId": "egg-dosas",
+      "categoryName": "Classic & Spiced Egg Dosas",
+      "description": "A wholesome, modern twist featuring protein-dense scrambled tofu combined seamlessly with seasoned egg.",
+      "tags": [
+        "High Protein"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-016",
+      "name": "Idly ( 1 piece )",
+      "categoryId": "idly-vada",
+      "categoryName": "Idly & Vada",
+      "description": "Soft and authentic South Indian steamed rice cakes prepared fresh daily.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-017",
+      "name": "Ghee Roast Idly",
+      "categoryId": "idly-vada",
+      "categoryName": "Idly & Vada",
+      "description": "Soft and authentic South Indian steamed rice cakes prepared fresh daily.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-018",
+      "name": "Pepper Fry Idly",
+      "categoryId": "idly-vada",
+      "categoryName": "Idly & Vada",
+      "description": "Soft and authentic South Indian steamed rice cakes prepared fresh daily.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 1,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-019",
+      "name": "Butten Idly",
+      "categoryId": "idly-vada",
+      "categoryName": "Idly & Vada",
+      "description": "Soft and authentic South Indian steamed rice cakes prepared fresh daily.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-020",
+      "name": "Vada",
+      "categoryId": "idly-vada",
+      "categoryName": "Idly & Vada",
+      "description": "Crisp on the outside, fluffy inside golden medu vada prepared with savory herbs.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-021",
+      "name": "Fried Eggs Over Easy / Over",
+      "categoryId": "english-breakfast",
+      "categoryName": "English Breakfast (2 Eggs)",
+      "description": "Farm fresh eggs cooked with seasoned butter to your exact preferred yolk consistency.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-022",
+      "name": "Fried Eggs Sunny Side",
+      "categoryId": "english-breakfast",
+      "categoryName": "English Breakfast (2 Eggs)",
+      "description": "Farm fresh eggs cooked with seasoned butter to your exact preferred yolk consistency.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-023",
+      "name": "Poached Eggs",
+      "categoryId": "english-breakfast",
+      "categoryName": "English Breakfast (2 Eggs)",
+      "description": "Gently simmered farm eggs with a velvety, runny golden yolk center.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-024",
+      "name": "Boiled Eggs Masala",
+      "categoryId": "english-breakfast",
+      "categoryName": "English Breakfast (2 Eggs)",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-025",
+      "name": "Scramble Eggs",
+      "categoryId": "english-breakfast",
+      "categoryName": "English Breakfast (2 Eggs)",
+      "description": "Slow-whisked soft, creamy eggs cooked gently with dairy butter.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-026",
+      "name": "Desi Masala Bhurji",
+      "categoryId": "english-breakfast",
+      "categoryName": "English Breakfast (2 Eggs)",
+      "description": "Zesty Indian street-style scrambled eggs tossed with chopped onions, green chilies, and cilantro.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-027",
+      "name": "Egg Benedict",
+      "categoryId": "english-breakfast",
+      "categoryName": "English Breakfast (2 Eggs)",
+      "description": "Poached eggs perched on toasted bread, blanketed in rich house hollandaise.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-028",
+      "name": "Classic French Butter Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "A smooth, pale golden rolled omelet cooked with premium butter for a velvety texture.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-029",
+      "name": "Thick Fluffy Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "Whisked into airy perfection and gently cooked until beautifully light and puffy.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-030",
+      "name": "Cheese Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "Folded tightly over a generous melting core of rich, premium mozzarella and cheddar blend.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-031",
+      "name": "Masala Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "The ultimate street comfort, spiked with finely chopped onions, sharp green chilies, tomatoes, and herbs.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-032",
+      "name": "Goan Ros Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "A traditional fluffy omelet drowned in a deeply aromatic, richly spiced Goan gravy broth.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-033",
+      "name": "Street Way Tava Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "Rustic local street-style omelet fried with strong whole spices and crushed peppers on a flat iron tava.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-034",
+      "name": "Spinach Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "Packed with vitamin-rich garden fresh spinach leaves, delicate herbs, and cracked white pepper.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-035",
+      "name": "Mushroom Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "Stuffed with savory, earth-sauteed button mushrooms and seasoned with light garlic salt.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-036",
+      "name": "Broccoli Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "An antioxidant powerhouse featuring crisp-tender broccoli florets whipped cleanly into farm eggs.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-037",
+      "name": "Cherry Tomato Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "A light, refreshing profile balancing juicy sun-ripened tomatoes, sweet red onions, and cilantro.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-038",
+      "name": "Exotic Vegetables Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "Loaded to the brim with crunchy colored bell peppers, zucchini chunks, baby corn, and black olives.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-039",
+      "name": "Sweet Corn Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "A unique sweet-and-savory breakfast experience highlighted by plump golden kernels of sweet corn.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-040",
+      "name": "Crunchy Mint Omelet",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-041",
+      "name": "Spanish Frittata With Onion And Potato",
+      "categoryId": "omelets-frittatas",
+      "categoryName": "The Omelet Connoisseur",
+      "description": "A rustic, slow-baked thick egg block layered with tender caramelized onions and thin sliced potatoes.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-042",
+      "name": "Egg Manchurian",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Crispy fried boiled egg chunks tossed in a tangy, sweet, and spicy Manchurian sauce.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-043",
+      "name": "Egg 65",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Spicy, deep-fried egg bites marinated in a rich blend of Southern Indian spices and curry leaves.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-044",
+      "name": "Egg Gongura 65",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "A fiery twist on Egg 65 infused with the signature tangy flavor of traditional Gongura (sorrel) leaves.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-045",
+      "name": "Egg Crispy Fry Szechwan Sauce",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Perfectly battered golden egg strips wok-tossed in a bold and fiery Szechwan sauce.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-046",
+      "name": "Egg Chinese Butter Garlic Sauce",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Delectable egg pieces simmered in a rich, velvety butter garlic sauce with oriental greens.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-047",
+      "name": "Egg Bonda",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Classic South Indian street-style deep-fried golden fritters with a savory spiced egg filling.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-048",
+      "name": "Egg Dragon",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Crispy egg fingers tossed with crunchy bell peppers, cashews, and a sweet-spicy red chili glaze.",
+      "tags": [
+        "Chef's Special",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-049",
+      "name": "Egg Crispy Peri Peri",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Crunchy, golden-fried egg bites dusted with a generous amount of zesty African Peri Peri spice.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-050",
+      "name": "Egg Ghee Roast",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Hard-boiled eggs slow-cooked in a rich, aromatic, and fiery Mangalorean ghee roast masala paste.",
+      "tags": [
+        "Bestseller",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-051",
+      "name": "Egg Malabar Pepper Fry",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "A coastal delicacy featuring eggs coated in a robust freshly crushed black pepper and fennel spice mix.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-052",
+      "name": "Paneer Ghee Roast",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Soft, succulent cottage cheese cubes roasted in pure clarified butter and authentic coastal spices.",
+      "tags": [
+        "Bestseller",
+        "High Protein"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-053",
+      "name": "Paneer Butter Garlic Sauce",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Fresh paneer chunks sautéed to perfection and served in a creamy, aromatic garlic butter reduction.",
+      "tags": [
+        "High Protein"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-054",
+      "name": "Tofu Pepper Fry",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Protein-rich tofu cubes stir-fried with plenty of freshly ground black pepper, curry leaves, and green chilies.",
+      "tags": [
+        "High Protein",
+        "Spicy"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 1,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-055",
+      "name": "Mushrooms Malabar Pepper Fry",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Plump button mushrooms tossed with traditional Malabar spices and heavy notes of black pepper.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 1,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-056",
+      "name": "Mushrooms Crispy Fry Szechwan Sauce",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Batter-fried crispy mushrooms coated in a vibrant, tongue-tingling Szechwan chili reduction.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 2,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-057",
+      "name": "Broccoli Egg",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Fresh, crunchy broccoli florets gently sautéed alongside perfectly scrambled spiced eggs.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-058",
+      "name": "Broccoli Peri Peri",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Tender steamed broccoli florets tossed in a blazing hot and citrusy Peri Peri seasoning block.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-059",
+      "name": "Gobi Egg",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "A wonderful stir-fry combination of crispy cauliflower florets and seasoned scrambled eggs.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-060",
+      "name": "Gobi Peri Peri",
+      "categoryId": "starters-fusion",
+      "categoryName": "Starters & Fusion Bites",
+      "description": "Crispy golden cauliflower bites generously coated in a fiery, zesty Peri Peri dry spice blend.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-061",
+      "name": "All English Breakfast",
+      "categoryId": "breakfast-platters",
+      "categoryName": "Signature Breakfast Platters",
+      "description": "Two eggs prepared to your order, served alongside hearty chicken sausages, crispy hash brown, warm baked beans, grilled tomato, sautéed mushrooms, and perfectly toasted buttered bread.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 2
+    },
+    {
+      "id": "dish-062",
+      "name": "American Breakfast",
+      "categoryId": "breakfast-platters",
+      "categoryName": "Signature Breakfast Platters",
+      "description": "Two fluffy golden pancakes served with two fried eggs, savory sausages, sautéed mushrooms, rich maple syrup, and a crispy hash brown.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 2
+    },
+    {
+      "id": "dish-063",
+      "name": "French Breakfast",
+      "categoryId": "breakfast-platters",
+      "categoryName": "Signature Breakfast Platters",
+      "description": "Two slices of artisanal French toast dusted with cinnamon sugar and honey, accompanied by one egg to order, juicy chicken sausage, and a golden hash brown.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 2
+    },
+    {
+      "id": "dish-064",
+      "name": "Kashmiri Eggs",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "Perfectly poached eggs simmered in a rich, aromatic tomato and yogurt gravy, infused with traditional Kashmiri spices and a hint of saffron.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-065",
+      "name": "Egg Pani Puri",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "A street-food favorite with a twist! Crisp puris stuffed with a spiced egg bhurji mixture, served with tangy tamarind mint water.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-066",
+      "name": "Middle Eastern Shakshuka",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "Gently poached eggs nesting in a vibrant, gently spiced Mediterranean sauce of tomatoes, bell peppers, onions, garlic, and fresh herbs.",
+      "tags": [
+        "Chef's Special",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-067",
+      "name": "Egg Paddus",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "South Indian style fluffy, savory rice dumplings mixed with whisked eggs, finely chopped onions, green chilies, and fresh coriander.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-068",
+      "name": "Australian Egg Fry",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "A unique Surat-style fusion delicacy featuring layered fried eggs topped with a luscious, richly spiced cheese and tomato gravy.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-069",
+      "name": "Egg Tava Crumble (Kheema)",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "Finely minced hard-boiled eggs tossed on a hot griddle with caramelized onions, rustic spices, tomatoes, and a generous dollop of butter.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-070",
+      "name": "Mushroom Egg Gratin",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "Sautéed wild mushrooms and sliced eggs blanketed in a creamy, velvety white sauce, topped with Gruyère cheese and baked until golden brown.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-071",
+      "name": "Broccoli Egg Gratin",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "Tender broccoli florets paired with rich boiled eggs, smothered in a decadent cheese sauce and baked to a perfect bubbly crisp.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-072",
+      "name": "Mint Pearl Eggs",
+      "categoryId": "egg-specials",
+      "categoryName": "Egg Specials & Gratins",
+      "description": "Delicate hard-boiled quail eggs marinated and tossed in a vibrant, refreshing mint and coriander pesto glaze.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 6
+    },
+    {
+      "id": "dish-073",
+      "name": "Egg Loziz",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "A rich, cheesy specialty egg preparation packed with flavorful spices and a melt-in-your-mouth texture.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-074",
+      "name": "Surti Egg Locha",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "A famous street-style soft egg dish mixed with special Surti masalas, butter, and topped with crisp sev.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-075",
+      "name": "Egg Sprunch",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "Perfectly fluffy, crispy-edged fried eggs seasoned with an aromatic herb and spice blend.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-076",
+      "name": "Mini Scotch Eggs",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "Savory hard-boiled miniature eggs wrapped in seasoned minced meat, breaded, and fried to golden perfection.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-077",
+      "name": "Smoky BBQ Crispy Eggs",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "Deep-fried boiled eggs tossed in a rich, tangy, and smoky barbecue sauce finish.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-078",
+      "name": "Deviled Eggs",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "Hard-boiled egg halves filled with a creamy, perfectly seasoned yolk paste, dusted with smoked paprika.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-079",
+      "name": "Egg Butter Garlic Fry",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "Boiled egg slices sautéed gently in an abundance of aromatic garlic butter and mild spices.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-080",
+      "name": "Egg Mushroom Garlic Fry",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "A delicious combination of tender mushrooms and sliced eggs tossed in a savory garlic-butter herb reduction.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-081",
+      "name": "Crispy Egg Masala Egg Tacos",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "Warm taco shells packed with crispy spiced eggs, fresh slaw, and signature house sauces.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-082",
+      "name": "Egg Masala French Toast",
+      "categoryId": "chef-specials",
+      "categoryName": "Chef Special Inventions",
+      "description": "A savory take on the classic French toast, dipped in an egg-herb batter and pan-fried to crisp perfection.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-083",
+      "name": "Egg Ghee Roast Mozzarella Cheese Roll",
+      "categoryId": "signature-rolls",
+      "categoryName": "Signature Rolls",
+      "description": "A rich and aromatic Mangalorean-style egg ghee roast wrapped gently with melted mozzarella cheese in a flaky, toasted paratha.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-084",
+      "name": "Egg Tava Masala Cheese Roll",
+      "categoryId": "signature-rolls",
+      "categoryName": "Signature Rolls",
+      "description": "Spicy, street-style egg scrambled on a hot tava with vibrant masalas, finished with a generous layer of ooey-gooey cheese.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-085",
+      "name": "Egg Drop Sweet Corn Soup",
+      "categoryId": "soups-broths",
+      "categoryName": "Soups & Broths",
+      "description": "A comforting, velvety classic featuring sweet golden corn kernels simmered in a savory broth, finished with beautiful, delicate ribbons of whisked egg.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-086",
+      "name": "Egg Lung Fung Soup",
+      "categoryId": "soups-broths",
+      "categoryName": "Soups & Broths",
+      "description": "A rich, thick, and deeply flavorful Indo-Chinese soup loaded with finely minced vegetables, mushrooms, and hearty ribbons of egg, accented with a touch of lemon zest.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-087",
+      "name": "Egg Manchow Soup",
+      "categoryId": "soups-broths",
+      "categoryName": "Soups & Broths",
+      "description": "A dark, fiery soup packed with robust garlic, ginger, and green chilies, loaded with shredded vegetables and silky egg strands, topped with crunchy fried noodles.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-088",
+      "name": "Mexican Soup With Poached Eggs",
+      "categoryId": "soups-broths",
+      "categoryName": "Soups & Broths",
+      "description": "A vibrant, spiced tomato and black bean broth infused with cumin and cilantro, served hot with a perfectly soft-poached egg nestled in the center.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-089",
+      "name": "Veg Manchow Soup",
+      "categoryId": "soups-broths",
+      "categoryName": "Soups & Broths",
+      "description": "A classic spicy and sour Indo-Chinese broth loaded with finely diced garden vegetables, fresh scallions, and deep aromatic spices, served with crispy noodles.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 2,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-090",
+      "name": "Sweet Corn Soup",
+      "categoryId": "soups-broths",
+      "categoryName": "Soups & Broths",
+      "description": "A light, heartwarming soupcrafted with crushed sweet cream corn and a medley of finely chopped spring vegetables in a gently seasoned, clear vegetable broth.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-091",
+      "name": "Egg Rice Bangalore Street Style",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "A local legend. Fragrant basmati rice wok-tossed with local spices, scrambled eggs, fresh curry leaves, and a dash of dark soy sauce for that unmistakable street-side aroma.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-092",
+      "name": "Egg Fried Rice",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-093",
+      "name": "Omurice (Japanese Omelet Rice)",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "Comfort in a blanket. Sautéed ketchup-flavored rice wrapped seamlessly inside a beautifully soft, pillow-textured classic French-style egg omelet.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-094",
+      "name": "Mexican Egg Rice",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "Zesty and vibrant. Long-grain rice infused with rich tomato puree, sweet corn, black beans, and jalapeños, topped with perfectly spiced scrambled eggs.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-095",
+      "name": "Mint Egg Rice",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "Refreshing and aromatic. Fluffy rice tossed with a cooling homemade garden-fresh mint and coriander paste, combined with light, protein-packed egg flecks.",
+      "tags": [
+        "High Protein"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-096",
+      "name": "Gongur Egg Rice",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "A tangy Andhra specialty. Steaming hot rice stir-fried with traditional sour sorrel leaf (Gongura) pickle, roasted spices, and hearty bits of egg.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-097",
+      "name": "Palak Egg Rice",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "Wholesome and vibrant. Earthy, iron-rich spinach puree blended seamlessly into stir-fried rice and folded with soft-scrambled seasoned eggs.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-098",
+      "name": "Korean Gyeran Bap (Soya Butter Egg Rice)",
+      "categoryId": "artisan-egg-rice",
+      "categoryName": "Artisan Egg Rice Selection",
+      "description": "The ultimate quick comfort bowl. Hot steamed jasmine rice drizzled with rich premium soy sauce, a generous melt of salted butter, and completed with crisp fried eggs.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-099",
+      "name": "Egg Manchurian Fried Noodles",
+      "categoryId": "street-noodles",
+      "categoryName": "Wok-Fried Street Noodles",
+      "description": "Indo-Chinese fusion at its peak. Stir-fried egg noodles loaded with crisp vegetables and drenched in a savory, tangy Manchurian sauce blend.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-100",
+      "name": "Egg Thai Basil Fried Noodles",
+      "categoryId": "street-noodles",
+      "categoryName": "Wok-Fried Street Noodles",
+      "description": "A aromatic sensory journey. Flat noodles tossed over a blazing wok with fresh aromatic Thai holy basil leaves, fiery bird's eye chilies, and scrambled eggs.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-101",
+      "name": "Egg Hakka Noodles",
+      "categoryId": "street-noodles",
+      "categoryName": "Wok-Fried Street Noodles",
+      "description": "The quintessential classic. Perfectly pulled thin street-style noodles tossed high with crunchy julienned veggies, eggs, and subtle white pepper seasoning.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 1,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-102",
+      "name": "Egg Drop Maggi",
+      "categoryId": "maggi-chronicles",
+      "categoryName": "The Maggi Chronicles",
+      "description": "Classic, comforting instant noodles elevated with a delicate ribbon of silky whisked eggs dropped into a simmering, perfectly spiced broth.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-103",
+      "name": "Szechwan Egg Maggi Dry",
+      "categoryId": "maggi-chronicles",
+      "categoryName": "The Maggi Chronicles",
+      "description": "Wok-tossed dry Maggi noodles infused with a fiery, bold Szechwan house sauce and scrambled egg bits for a satisfying spicy kick.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-104",
+      "name": "Crispy Egg Fry With Maggi",
+      "categoryId": "maggi-chronicles",
+      "categoryName": "The Maggi Chronicles",
+      "description": "A beautiful textural contrast featuring perfectly cooked savory noodles topped with a golden, seasoned crispy fried egg.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-105",
+      "name": "Maggi Egg Frittata",
+      "categoryId": "maggi-chronicles",
+      "categoryName": "The Maggi Chronicles",
+      "description": "An innovative culinary mashup where spiced Maggi noodles are baked right into a fluffy, golden skillet egg frittata.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-106",
+      "name": "Crispy Egg Masala Patty Burger",
+      "categoryId": "burgers-sandwiches",
+      "categoryName": "Craft Burgers & Sandwiches",
+      "description": "A golden-fried, spiced egg masala patty with a beautifully crunchy exterior, layered with crisp lettuce, fresh onions, and our signature herb-infused house burger sauce inside soft toasted buns.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-107",
+      "name": "Tandoori Jangli Eggs Cheese Burger",
+      "categoryId": "burgers-sandwiches",
+      "categoryName": "Craft Burgers & Sandwiches",
+      "description": "Flame-kissed, rustically spiced tandoori 'jangli' eggs loaded with hot melted cheddar cheese, smokey char-grilled onions, and a rich, creamy tandoori mayo accent.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-108",
+      "name": "4 Eggs Smash Cheese Burger",
+      "categoryId": "burgers-sandwiches",
+      "categoryName": "Craft Burgers & Sandwiches",
+      "description": "The ultimate protein feast featuring four expertly smashed, griddle-seared eggs layered together with multiple sheets of melted American cheese, sharp pickles, and burger relish.",
+      "tags": [
+        "High Protein"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 4
+    },
+    {
+      "id": "dish-109",
+      "name": "Egg Maggi Noodle Cheese Burger",
+      "categoryId": "burgers-sandwiches",
+      "categoryName": "Craft Burgers & Sandwiches",
+      "description": "A sensational street-fusion creation starring a crisp-fried egg and seasoned Maggi noodle cake, topped with a rich layer of melted cheese and house spices in a soft bun.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-110",
+      "name": "Chili Cheese Egg Toasted Sandwich",
+      "categoryId": "burgers-sandwiches",
+      "categoryName": "Craft Burgers & Sandwiches",
+      "description": "A perfect fusion of fluffy egg preparation, sharp melted cheese, and a fiery hint of chopped green chilies, golden-toasted to a crisp finish.",
+      "tags": [
+        "Chef's Special",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-111",
+      "name": "Korean Gilgeori Toast Sandwich",
+      "categoryId": "burgers-sandwiches",
+      "categoryName": "Craft Burgers & Sandwiches",
+      "description": "An authentic Seoul street-style sweet and savory egg sandwich, packed with a crunchy cabbage-carrot egg patty, melted cheese, and a signature sprinkle of sugar and savory sauce.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-112",
+      "name": "Spicy Chettinad Eggs Masala Pizza",
+      "categoryId": "pizzas-sizzlers",
+      "categoryName": "Gourmet Pizzas & Sizzlers",
+      "description": "A fiery Southern-inspired fusion featuring a crisp crust layered with robust, aromatic Chettinad egg masala, sliced hard-boiled eggs, fresh curry leaves, and a generous blanket of melted mozzarella cheese.",
+      "tags": [
+        "Chef's Special",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-113",
+      "name": "Surti Egg Ghotala Pizza",
+      "categoryId": "pizzas-sizzlers",
+      "categoryName": "Gourmet Pizzas & Sizzlers",
+      "description": "An authentic Surat street-food classic reimagined. A freshly baked pizza base topped with our rich, spiced egg ghotala gravy, grated boiled eggs, and stringy premium cheeses, finished with a touch of fresh cilantro.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-114",
+      "name": "Spicy Shakshuka Cheese Pizza",
+      "categoryId": "pizzas-sizzlers",
+      "categoryName": "Gourmet Pizzas & Sizzlers",
+      "description": "A spectacular Mediterranean twist featuring a vibrant, spiced tomato and bell pepper shakshuka sauce spread over a hand-stretched crust, topped with perfectly set eggs, crumbled feta, and bubbling mozzarella.",
+      "tags": [
+        "Chef's Special",
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-115",
+      "name": "Chinese Egg Sizzler",
+      "categoryId": "pizzas-sizzlers",
+      "categoryName": "Gourmet Pizzas & Sizzlers",
+      "description": "A sizzling sensory delight featuring a multi-layered combination of spicy Egg Chili, crispy golden Egg 65, and perfectly wok-tossed Egg Combination Fried Rice. Served piping hot over a bed of grilled cabbage, generously drenched in a rich, savory Manchurian Gravy and accompanied by a side of crispy French fries.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 2,
+      "eggsUsed": 4
+    },
+    {
+      "id": "dish-116",
+      "name": "Paneer Mexican Sizzler",
+      "categoryId": "pizzas-sizzlers",
+      "categoryName": "Gourmet Pizzas & Sizzlers",
+      "description": "An indulgent Tex-Mex fusion featuring tender cubes of premium grilled Paneer smothered in a robust, smoky Tex-Mex sauce. Complimented by a vibrant combination of Mushroom & Broccoli Crispy Peri-Peri, fragrant Mexican Corn Rice, and golden crispy French fries served on a smoking cast-iron platter.",
+      "tags": [
+        "Chef's Special",
+        "High Protein"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-117",
+      "name": "French Egg Nicoise Salad",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-118",
+      "name": "Egg Caesar Salad",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-119",
+      "name": "Quinoa Avocado Chickpea Salad",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "High Protein"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-120",
+      "name": "Egg Biryani",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Fragrant long-grain basmati rice slow-cooked with aromatic roasted spices, caramelized onions, and fresh mint.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-121",
+      "name": "Mushroom Biryani",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Fragrant long-grain basmati rice slow-cooked with aromatic roasted spices, caramelized onions, and fresh mint.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-122",
+      "name": "Egg Kothu Parotta",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-123",
+      "name": "Egg Ghee Roast With Bhatura",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-124",
+      "name": "Chole Bhatura",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-125",
+      "name": "Egg Mandi (for 2)",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Smoky Arabian-inspired spiced fragrant rice platter served with seasoned boiled eggs, fried nuts, and house tomato salsa.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-126",
+      "name": "Andhra meals ( Unlimited )",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "(rice, papu, rasam, sambar, palyam, podi, pickals ,curd, chapathi)",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-127",
+      "name": "Chapathi egg meals +omelet and egg bhurji",
+      "categoryId": "salads-meals",
+      "categoryName": "Salads & Main Meals",
+      "description": "Zesty Indian street-style scrambled eggs tossed with chopped onions, green chilies, and cilantro.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Egg",
+      "spiceLevel": 0,
+      "eggsUsed": 1
+    },
+    {
+      "id": "dish-128",
+      "name": "Cream Caramel",
+      "categoryId": "sweets-desserts",
+      "categoryName": "Sweets & Desserts",
+      "description": "A timeless classic featuring a silk-smooth custard base baked to delicate perfection, drenched in a rich, amber-hued caramel glaze that delivers a beautifully balanced bittersweet note.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-129",
+      "name": "Bread Butter Pudding With Chocolate Sauce",
+      "categoryId": "sweets-desserts",
+      "categoryName": "Sweets & Desserts",
+      "description": "Warm, comforting layers of buttered artisanal brioche baked in a velvet-textured custard, served warm and generously drizzled with an indulgent, hot bittersweet dark chocolate reduction.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-130",
+      "name": "Bombe Alaska",
+      "categoryId": "sweets-desserts",
+      "categoryName": "Sweets & Desserts",
+      "description": "A spectacular showstopper showcasing a core of premium, rich ice cream sitting on a sponge base, blanketed in a mountain of pillowy meringue and flambéed to create a gorgeous toasted exterior.",
+      "tags": [
+        "Chef's Special"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-131",
+      "name": "Blue Berry Cheese Cake",
+      "categoryId": "sweets-desserts",
+      "categoryName": "Sweets & Desserts",
+      "description": "A velvety, cream-smooth New York style cheesecake resting on a buttery, crisp graham cracker crust, crowned elegantly with a vibrant, tangy reduction of premium wild blueberries.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-132",
+      "name": "Virgin Mojito",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Hand-shaken vibrant, citrusy and herbal mocktail cooler served chilled over ice.",
+      "tags": [
+        "Bestseller"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-133",
+      "name": "Spicy Guava",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "Spicy"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 2,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-134",
+      "name": "Lemon Ice Tea",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Aromatic freshly brewed house tea prepared with wholesome spices and fresh milk.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-135",
+      "name": "Sunrise Mocktail Cooler",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Hand-shaken vibrant, citrusy and herbal mocktail cooler served chilled over ice.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-136",
+      "name": "Masala Buttermilk",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-137",
+      "name": "Blue Lagoon Cooler",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Hand-shaken vibrant, citrusy and herbal mocktail cooler served chilled over ice.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-138",
+      "name": "Oreo Thickshake",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Decadently blended chilled milkshake with rich premium cream and toppings.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-139",
+      "name": "Strawberry Thickshake",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Decadently blended chilled milkshake with rich premium cream and toppings.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-140",
+      "name": "Nutella Thickshake",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Decadently blended chilled milkshake with rich premium cream and toppings.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-141",
+      "name": "Virgin Piña Colada",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Artisanal kitchen specialty prepared fresh to order using farm-fresh ingredients.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-142",
+      "name": "Masala Jeera Goli Soda",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Nostalgic retro carbonated marble soda bursting with crisp, refreshing fizz.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-143",
+      "name": "Cola Goli Soda",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Nostalgic retro carbonated marble soda bursting with crisp, refreshing fizz.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-144",
+      "name": "Kala Khatta Goli Soda",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Nostalgic retro carbonated marble soda bursting with crisp, refreshing fizz.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-145",
+      "name": "Limbu (Lemon) Goli Soda",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Nostalgic retro carbonated marble soda bursting with crisp, refreshing fizz.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-146",
+      "name": "Paan Masala Goli Soda",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Nostalgic retro carbonated marble soda bursting with crisp, refreshing fizz.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-147",
+      "name": "Nannari Goli Soda",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Nostalgic retro carbonated marble soda bursting with crisp, refreshing fizz.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-148",
+      "name": "Milk Nannari Goli Soda",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Hot Beverage’s",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-149",
+      "name": "Tea",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Aromatic freshly brewed house tea prepared with wholesome spices and fresh milk.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-150",
+      "name": "Coffee",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Traditional South Indian filter coffee brewed strong with frothy steamed milk.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-151",
+      "name": "Black Coffee",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Traditional South Indian filter coffee brewed strong with frothy steamed milk.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-152",
+      "name": "Lemon Tea",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Aromatic freshly brewed house tea prepared with wholesome spices and fresh milk.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-153",
+      "name": "Masala Tea",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Aromatic freshly brewed house tea prepared with wholesome spices and fresh milk.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    },
+    {
+      "id": "dish-154",
+      "name": "Ginger Tea",
+      "categoryId": "beverages-coolers",
+      "categoryName": "Coolers, Shakes & Goli Sodas",
+      "description": "Aromatic freshly brewed house tea prepared with wholesome spices and fresh milk.",
+      "tags": [
+        "House Specialty"
+      ],
+      "dietary": "Veg",
+      "spiceLevel": 0,
+      "eggsUsed": 0
+    }
+  ]
+}

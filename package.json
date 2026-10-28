@@ -1,0 +1,14 @@
+{
+  "name": "fritata-fiesta-cafe",
+  "version": "1.0.0",
+  "description": "Official website for Frittata Fiesta Café (Egg AddA) - 150+ Egg Delicacies",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
