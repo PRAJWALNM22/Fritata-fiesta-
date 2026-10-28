@@ -115,7 +115,8 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation Menu -->
+        <!-- Desktop & Mobile Navigation Menu -->
+        <div class="nav-menu-backdrop" id="nav-menu-backdrop"></div>
         <nav aria-label="Primary navigation">
           <ul class="nav-menu" id="nav-menu">
             <li><a href="#hero" class="nav-link active">Home</a></li>
@@ -125,16 +126,31 @@
             <li><a href="#about-story" class="nav-link">Our Story</a></li>
             <li><a href="#reviews" class="nav-link">Reviews</a></li>
             <li><a href="#visit-us" class="nav-link">Visit Us</a></li>
+            <li class="mobile-menu-actions">
+              <a href="#table-booking" class="btn btn-primary btn-mobile-book">
+                <span>🪑 Reserve Table (Instant Pass)</span>
+              </a>
+              <div class="mobile-quick-contact-row">
+                <a href="tel:+919886012345" class="btn btn-dark" style="flex: 1;">
+                  <span>📞 Call Café</span>
+                </a>
+                <a href="https://wa.me/919886012345?text=Hi%20Frittata%20Fiesta%2C%20I%20would%20like%20to%20inquire%20about%20your%20menu." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="flex: 1;">
+                  <span>💬 WhatsApp</span>
+                </a>
+              </div>
+            </li>
           </ul>
         </nav>
 
         <!-- Header Actions -->
         <div class="header-actions">
           <a href="#table-booking" class="btn btn-primary btn-header-booking">
-            <span>🪑 Book a Table</span>
+            <span>🪑 Book Table</span>
           </a>
           <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-            ☰
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
           </button>
         </div>
       </div>
@@ -1152,6 +1168,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- MOBILE BOTTOM STICKY DOCK (Quick Action Bar for Mobile Phones) -->
+  <nav class="mobile-bottom-dock" aria-label="Mobile quick actions">
+    <a href="#hero" class="dock-item" id="dock-home">
+      <span class="dock-icon">🏠</span>
+      <span class="dock-label">Home</span>
+    </a>
+    <a href="#menu-explorer" class="dock-item" id="dock-menu">
+      <span class="dock-icon">🍳</span>
+      <span class="dock-label">Menu</span>
+    </a>
+    <a href="#table-booking" class="dock-item dock-item-highlight" id="dock-book">
+      <span class="dock-icon">🪑</span>
+      <span class="dock-label">Book</span>
+    </a>
+    <a href="https://wa.me/919886012345?text=Hi%20Frittata%20Fiesta%2C%20I%20would%20like%20to%20order%20or%20inquire." target="_blank" rel="noopener noreferrer" class="dock-item" id="dock-whatsapp">
+      <span class="dock-icon">💬</span>
+      <span class="dock-label">WhatsApp</span>
+    </a>
+    <a href="tel:+919886012345" class="dock-item" id="dock-call">
+      <span class="dock-icon">📞</span>
+      <span class="dock-label">Call</span>
+    </a>
+  </nav>
 
   <!-- Script Entry -->
   <script type="module" src="/src/main.js"></script>

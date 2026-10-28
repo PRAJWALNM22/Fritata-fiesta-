@@ -442,14 +442,75 @@ button, input, select {
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
 
-/* Mobile Toggle */
+/* Mobile Toggle & Backdrop */
+.nav-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 24, 42, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 98;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-menu-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .mobile-nav-toggle {
   display: none;
-  background: none;
-  border: none;
-  font-size: 1.6rem;
-  color: var(--text-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: #FAF4EB;
+  border: 1.5px solid var(--border-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
   cursor: pointer;
+  z-index: 101;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-toggle:hover {
+  background: #F4E8D8;
+  border-color: var(--primary-gold);
+}
+
+.hamburger-bar {
+  display: block;
+  width: 20px;
+  height: 2.2px;
+  background-color: var(--brand-navy);
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+.mobile-nav-toggle.active .hamburger-bar:nth-child(1) {
+  transform: translateY(7.2px) rotate(45deg);
+}
+
+.mobile-nav-toggle.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.mobile-nav-toggle.active .hamburger-bar:nth-child(3) {
+  transform: translateY(-7.2px) rotate(-45deg);
+}
+
+.mobile-menu-actions {
+  display: none;
+}
+
+/* Mobile Bottom Dock (Hidden on desktop) */
+.mobile-bottom-dock {
+  display: none;
 }
 
 /* ==========================================================================
@@ -2768,12 +2829,18 @@ button, input, select {
 }
 
 /* ==========================================================================
-   RESPONSIVE MEDIA QUERIES
+   COMPREHENSIVE MOBILE-RESPONSIVE SYSTEM
    ========================================================================== */
+
+/* ---------- Tablet & Small Laptops (<= 1024px) ---------- */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .hero-content {
+    max-width: 680px;
   }
   
   .about-grid, .visit-grid {
@@ -2781,62 +2848,770 @@ button, input, select {
     gap: 2.5rem;
   }
 
+  .booking-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-summary-card {
+    position: static;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 
+/* ---------- Mobile & Tablets Portrait (<= 768px) ---------- */
 @media (max-width: 768px) {
+  /* Reserve space for the mobile sticky bottom dock */
+  body {
+    padding-bottom: 68px;
+  }
+
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* --- Top Announcement Bar --- */
+  .top-bar {
+    padding: 0.45rem 0;
+    font-size: 0.78rem;
+  }
+
+  .top-bar-inner {
+    justify-content: space-between;
+    gap: 0.4rem;
+  }
+
+  .top-bar-left .top-bar-item:not(.live-badge) {
+    display: none; /* Hide redundant city on mobile to keep single neat row */
+  }
+
+  .top-bar-right {
+    gap: 0.75rem;
+  }
+
+  /* --- Header & Mobile Navigation --- */
   .header-inner {
-    height: 70px;
+    height: 64px;
+  }
+
+  .logo {
+    gap: 0.65rem;
+  }
+
+  .brand-logo-img {
+    height: 44px;
+    max-width: 48px;
+  }
+
+  .logo-title {
+    font-size: 1.2rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+
+  .header-actions {
+    gap: 0.65rem;
+  }
+
+  .btn-header-booking {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+    border-radius: var(--radius-pill);
   }
 
   .mobile-nav-toggle {
-    display: block;
+    display: flex;
   }
 
+  /* Mobile Full-Screen Navigation Drawer */
   .nav-menu {
     position: fixed;
-    top: 70px;
+    top: 64px;
     left: 0;
+    right: 0;
     width: 100%;
-    background: #FFFFFF;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: 2rem 1.5rem;
-    gap: 1.5rem;
-    border-bottom: 2px solid var(--primary-gold);
-    box-shadow: var(--shadow-lg);
-    display: none;
+    align-items: stretch;
+    padding: 1.25rem 1.25rem 2.5rem;
+    gap: 0.4rem;
+    border-bottom: 3px solid var(--primary-gold);
+    box-shadow: 0 20px 45px rgba(65, 45, 30, 0.18);
+    z-index: 99;
+    transform: translateY(-12px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.25s ease;
   }
 
   .nav-menu.open {
     display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
-  .header-actions .btn {
-    display: none;
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    border-radius: var(--radius-md);
+    border-bottom: 1px solid var(--border-subtle);
+    transition: all var(--transition-fast);
   }
 
+  .nav-link.active, .nav-link:hover {
+    background: #FAF3E8;
+    color: #8C5800;
+  }
+
+  .nav-link.active::after, .nav-link:hover::after {
+    display: none; /* remove desktop underline indicator */
+  }
+
+  .nav-link.highlight-booking {
+    background: #FFF7ED;
+    border: 1px solid #FFEDD5;
+  }
+
+  .mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding-top: 1.25rem;
+    border-top: 2px dashed var(--border-color);
+  }
+
+  .btn-mobile-book {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .mobile-quick-contact-row {
+    display: flex;
+    gap: 0.65rem;
+  }
+
+  .mobile-quick-contact-row .btn {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+    justify-content: center;
+  }
+
+  /* --- Hero Section --- */
   .hero {
-    padding: 3rem 0;
+    padding: 2.5rem 0 3.25rem;
+  }
+
+  .hero-badge-pill {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.9rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+    line-height: 1.15;
+    margin-bottom: 1.15rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
   }
 
   .hero-stats-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    padding: 1rem 0.75rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+  }
+
+  .hero-stat-number {
+    font-size: 1.45rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.72rem;
+    line-height: 1.25;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-visual {
+    margin-top: 1rem;
+  }
+
+  .hero-image-card {
+    border-radius: var(--radius-lg);
+    border-width: 3px;
+    aspect-ratio: 16 / 11;
+  }
+
+  /* Ensure floating badges don't poke out on mobile screens */
+  .floating-glass-badge {
+    padding: 0.5rem 0.75rem;
+    gap: 0.55rem;
+  }
+
+  .floating-glass-badge.badge-top {
+    top: 10px;
+    right: 10px;
+  }
+
+  .floating-glass-badge.badge-bottom {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .badge-logo-mini, .floating-icon-box {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .badge-text-title {
+    font-size: 0.8rem;
+  }
+
+  .badge-text-sub {
+    font-size: 0.68rem;
+  }
+
+  /* --- Featured Signatures Section --- */
+  .featured-section {
+    padding: 3.5rem 0;
+  }
+
+  .featured-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .featured-card-content {
+    padding: 1.25rem;
+  }
+
+  .featured-card-title {
+    font-size: 1.2rem;
+  }
+
+  /* --- Interactive Menu Explorer --- */
+  .menu-section {
+    padding: 3.5rem 0;
+    scroll-margin-top: 64px;
+  }
+
+  .menu-search-filter-card {
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+  }
+
+  .search-input-wrap {
+    margin-bottom: 1.15rem;
+  }
+
+  .menu-search-input {
+    font-size: 0.95rem;
+    padding: 0.85rem 1rem 0.85rem 2.85rem;
+  }
+
+  .search-icon {
+    left: 1rem;
+    font-size: 1.05rem;
+  }
+
+  /* On mobile touch devices, hide desktop arrow buttons and allow silky touch swipe */
+  .cat-nav-btn {
+    display: none;
+  }
+
+  .category-scroll-container {
+    padding: 0.25rem 0 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+  }
+
+  .cat-pill {
+    padding: 0.55rem 0.95rem;
+    font-size: 0.85rem;
+    gap: 0.45rem;
+    scroll-snap-align: start;
+  }
+
+  .filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .filter-chips-group {
+    gap: 0.45rem;
+  }
+
+  .filter-chip {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.78rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .dish-card-header {
+    padding: 1.15rem 1.15rem 0.35rem;
+  }
+
+  .dish-card-body {
+    padding: 0.35rem 1.15rem 1.15rem;
+  }
+
+  .dish-title {
+    font-size: 1.08rem;
+  }
+
+  .dish-price {
+    font-size: 1.15rem;
+    padding: 0.2rem 0.55rem;
+  }
+
+  .dish-desc {
+    font-size: 0.85rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .load-more-btn {
+    width: 100%;
+    padding: 0.9rem;
+  }
+
+  /* --- Table Booking Section --- */
+  .booking-section {
+    padding: 3.5rem 0;
+    scroll-margin-top: 64px;
+  }
+
+  .booking-form-card {
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .booking-summary-card {
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-lg);
+    margin-top: 1.5rem;
+  }
+
+  .guest-pills-row {
+    gap: 0.45rem;
+  }
+
+  .guest-pill {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .seating-options-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .seating-option-card {
+    padding: 0.95rem;
+  }
+
+  .date-selection-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .quick-dates-row {
+    width: 100%;
+  }
+
+  .quick-date-chip {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.82rem;
+  }
+
+  .custom-date-wrap {
+    width: 100%;
+  }
+
+  .booking-date-input {
+    flex: 1;
+  }
+
+  .session-tabs-row {
+    gap: 0.35rem;
+  }
+
+  .session-tab {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.78rem;
+  }
+
+  .slots-grid {
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .slot-chip {
+    padding: 0.5rem 0.35rem;
+    font-size: 0.82rem;
+  }
+
+  .form-inputs-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  /* Crucial: Prevent iOS Safari from zooming into form fields on focus */
+  .form-input, .booking-date-input, select {
+    font-size: 16px !important;
+  }
+
+  .btn-submit-booking {
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+
+  /* --- About Section --- */
+  .about-section {
+    padding: 3.5rem 0;
+  }
+
+  .about-main-img {
+    border-radius: var(--radius-lg);
+  }
+
+  .about-experience-card {
+    position: static;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+  }
+
+  .about-features-list {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  .featured-grid, .menu-grid, .reviews-grid {
+  /* --- Reviews Section --- */
+  .reviews-section {
+    padding: 3.5rem 0;
+  }
+
+  .reviews-header-card {
+    padding: 1.35rem 1.15rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .reviews-actions-group {
+    width: 100%;
+  }
+
+  .reviews-actions-group .btn {
+    width: 100%;
+  }
+
+  .reviews-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .review-card {
+    padding: 1.35rem;
+  }
+
+  /* --- Visit Us Section --- */
+  .visit-section {
+    padding: 3.5rem 0;
+  }
+
+  .visit-info-card {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .map-frame-wrapper {
+    min-height: 280px;
+    max-height: 340px;
+    border-radius: var(--radius-lg);
+  }
+
+  /* --- FAQ Section --- */
+  .faq-section {
+    padding: 3.5rem 0;
+  }
+
+  .faq-question {
+    padding: 1.1rem 1.15rem;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.15rem 1.25rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.88rem;
+  }
+
+  /* --- Footer --- */
+  .footer {
+    padding: 3.5rem 0 2rem;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  /* --- Modals (Dish Details & Booking Success) --- */
+  .modal-backdrop {
+    padding: 0.75rem;
+  }
+
+  .modal-container, .modal-card {
+    max-height: 92vh;
+    border-radius: var(--radius-lg);
+  }
+
+  .modal-close-btn {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 36px;
+    height: 36px;
+  }
+
+  .modal-details-only .modal-content-inner {
+    padding: 1.5rem 1.15rem 1.25rem;
+  }
+
+  .modal-details-only .modal-dish-title {
+    font-size: 1.35rem;
+    padding-right: 2rem;
+  }
+
+  .modal-details-only .modal-description {
+    font-size: 0.92rem;
+    padding: 0.85rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .modal-nutrition-grid {
+    gap: 0.5rem;
+    padding: 0.85rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .nutri-value {
+    font-size: 1rem;
+  }
+
+  .nutri-label {
+    font-size: 0.72rem;
+  }
+
+  .booking-confirmation-card {
+    padding: 1.75rem 1.15rem;
+  }
+
+  .confirmation-details-box {
+    padding: 0.95rem;
+    gap: 0.55rem;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  /* Elevate floating scroll-to-top button above the bottom dock */
   .floating-action-fab {
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: 5rem;
+    right: 1rem;
+  }
+
+  .fab-scroll-top {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  /* --- Mobile Bottom Sticky Action Dock --- */
+  .mobile-bottom-dock {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -4px 20px rgba(65, 45, 30, 0.08);
+    z-index: 95;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .dock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    flex: 1;
+    height: 100%;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+  }
+
+  .dock-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .dock-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+  }
+
+  .dock-item.active {
+    color: #8C5800;
+  }
+
+  .dock-item-highlight {
+    background: linear-gradient(135deg, var(--primary-gold), var(--primary-amber));
+    color: #1A1300 !important;
+    border-radius: var(--radius-pill);
+    height: 44px;
+    max-width: 84px;
+    margin: 0 4px;
+    box-shadow: 0 3px 12px var(--gold-glow);
+    font-weight: 800;
+  }
+
+  .dock-item-highlight .dock-label {
+    color: #1A1300;
+    font-weight: 800;
+  }
+}
+
+/* ---------- Extra Small Phones (<= 480px) ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .logo-title {
+    font-size: 1.1rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .brand-logo-img {
+    height: 38px;
+    max-width: 42px;
+  }
+
+  /* On extra-compact mobile screens, let header have logo + toggle to avoid clutter */
+  .btn-header-booking {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .hero-stats-row {
+    gap: 0.35rem;
+    padding: 0.75rem 0.4rem;
+  }
+
+  .hero-stat-number {
+    font-size: 1.2rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.65rem;
+  }
+
+  .modal-details-only .modal-content-inner {
+    padding: 1.25rem 0.95rem;
+  }
+
+  .modal-dish-title {
+    font-size: 1.2rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
   }
 }

@@ -448,26 +448,61 @@ function setupEvents() {
     }
   });
 
-  // Mobile Nav Toggle
+  // Mobile Nav Toggle & Backdrop Overlay
+  const navBackdrop = document.getElementById('nav-menu-backdrop');
   if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', navMenu.classList.contains('open'));
-    });
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => navMenu.classList.remove('open'));
+    const toggleNav = (forceState) => {
+      const willBeOpen = forceState !== undefined ? forceState : !navMenu.classList.contains('open');
+      navMenu.classList.toggle('open', willBeOpen);
+      navToggle.classList.toggle('active', willBeOpen);
+      navToggle.setAttribute('aria-expanded', willBeOpen);
+      if (navBackdrop) navBackdrop.classList.toggle('active', willBeOpen);
+      document.body.style.overflow = willBeOpen ? 'hidden' : '';
+    };
+
+    navToggle.addEventListener('click', () => toggleNav());
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', () => toggleNav(false));
+    }
+    navMenu.querySelectorAll('.nav-link, .btn').forEach(link => {
+      link.addEventListener('click', () => toggleNav(false));
     });
   }
 
-  // Sticky header and scroll to top
+  // Sticky header, active section spy, and scroll to top
   const header = document.querySelector('.header');
+  const dockItems = document.querySelectorAll('.mobile-bottom-dock .dock-item');
+  const sections = document.querySelectorAll('section[id], footer[id]');
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    const scrollPos = window.scrollY;
+    if (scrollPos > 50) {
       if (header) header.classList.add('scrolled');
       if (scrollTopBtn) scrollTopBtn.classList.add('visible');
     } else {
       if (header) header.classList.remove('scrolled');
       if (scrollTopBtn) scrollTopBtn.classList.remove('visible');
+    }
+
+    // Mobile Dock Active State Spy
+    let currentId = '';
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 120;
+      const height = sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentId = sec.getAttribute('id');
+      }
+    });
+
+    if (currentId) {
+      dockItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href === `#${currentId}`) {
+          item.classList.add('active');
+        } else if (href && href.startsWith('#')) {
+          item.classList.remove('active');
+        }
+      });
     }
   });
 
