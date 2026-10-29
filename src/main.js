@@ -469,11 +469,8 @@ function setupEvents() {
     });
   }
 
-  // Sticky header, active section spy, and scroll to top
+  // Sticky header and scroll to top
   const header = document.querySelector('.header');
-  const dockItems = document.querySelectorAll('.mobile-bottom-dock .dock-item');
-  const sections = document.querySelectorAll('section[id], footer[id]');
-
   window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
     if (scrollPos > 50) {
@@ -483,33 +480,129 @@ function setupEvents() {
       if (header) header.classList.remove('scrolled');
       if (scrollTopBtn) scrollTopBtn.classList.remove('visible');
     }
-
-    // Mobile Dock Active State Spy
-    let currentId = '';
-    sections.forEach(sec => {
-      const top = sec.offsetTop - 120;
-      const height = sec.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
-        currentId = sec.getAttribute('id');
-      }
-    });
-
-    if (currentId) {
-      dockItems.forEach(item => {
-        const href = item.getAttribute('href');
-        if (href === `#${currentId}`) {
-          item.classList.add('active');
-        } else if (href && href.startsWith('#')) {
-          item.classList.remove('active');
-        }
-      });
-    }
   });
 
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+  }
+
+  // ==========================================================================
+  // MOBILE APP-STYLE TAB CONTROLLER & HYBRID ARCHITECTURE
+  // ==========================================================================
+  const dockButtons = document.querySelectorAll('.mobile-bottom-dock [data-tab-target]');
+  const mobileTabPanes = document.querySelectorAll('.mobile-tab-pane');
+
+  function isMobileView() {
+    return window.innerWidth <= 768;
+  }
+
+  function setActiveTab(tabName, scrollBehavior = 'smooth') {
+    if (!['home', 'menu', 'book', 'info'].includes(tabName)) {
+      tabName = 'home';
+    }
+
+    // Update bottom dock buttons
+    dockButtons.forEach(btn => {
+      const target = btn.getAttribute('data-tab-target');
+      btn.classList.toggle('active', target === tabName);
+    });
+
+    if (isMobileView()) {
+      // On Mobile: Only show sections belonging to the active tab
+      mobileTabPanes.forEach(pane => {
+        const paneTab = pane.getAttribute('data-tab');
+        if (paneTab === tabName) {
+          pane.style.display = 'block';
+        } else {
+          pane.style.display = 'none';
+        }
+      });
+
+      // Scroll to top of the selected tab
+      window.scrollTo({ top: 0, behavior: scrollBehavior });
+    } else {
+      // On Desktop / Laptop: All sections remain visible
+      mobileTabPanes.forEach(pane => {
+        pane.style.display = '';
+      });
+    }
+
+    // Sync address bar hash cleanly
+    if (history.replaceState) {
+      history.replaceState(null, '', '#' + tabName);
+    }
+  }
+
+  // Bottom dock buttons click
+  dockButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = btn.getAttribute('data-tab-target');
+      setActiveTab(target);
+    });
+  });
+
+  // Seamless navigation links interception (Header, Buttons, Hero CTAs)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const href = anchor.getAttribute('href');
+      let targetTab = null;
+
+      if (href === '#menu-explorer' || href === '#menu') targetTab = 'menu';
+      else if (href === '#table-booking' || href === '#book') targetTab = 'book';
+      else if (href === '#visit-us' || href === '#about-story' || href === '#reviews' || href === '#faq' || href === '#info') targetTab = 'info';
+      else if (href === '#hero' || href === '#featured-dishes' || href === '#home') targetTab = 'home';
+
+      if (isMobileView() && targetTab) {
+        e.preventDefault();
+        setActiveTab(targetTab);
+
+        // Sub-section scroll for Info tab
+        if (['#reviews', '#about-story', '#visit-us', '#faq'].includes(href)) {
+          setTimeout(() => {
+            const targetEl = document.querySelector(href);
+            if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth' });
+          }, 80);
+        }
+      }
+    });
+  });
+
+  // Jump to menu buttons (e.g. from Featured teaser banner)
+  document.querySelectorAll('.btn-jump-to-menu').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      setActiveTab('menu');
+    });
+  });
+
+  // Handle window resizing between laptop and mobile viewports
+  window.addEventListener('resize', () => {
+    if (!isMobileView()) {
+      mobileTabPanes.forEach(pane => {
+        pane.style.display = '';
+      });
+    } else {
+      const activeBtn = document.querySelector('.mobile-bottom-dock .dock-item.active');
+      const activeTab = activeBtn ? activeBtn.getAttribute('data-tab-target') : 'home';
+      setActiveTab(activeTab, 'auto');
+    }
+  });
+
+  // Initial load hash detection
+  const hash = window.location.hash.replace('#', '').toLowerCase();
+  if (['home', 'menu', 'book', 'info'].includes(hash)) {
+    setActiveTab(hash, 'auto');
+  } else if (hash === 'menu-explorer') {
+    setActiveTab('menu', 'auto');
+  } else if (hash === 'table-booking') {
+    setActiveTab('book', 'auto');
+  } else if (['visit-us', 'reviews', 'about-story', 'faq'].includes(hash)) {
+    setActiveTab('info', 'auto');
+  } else {
+    setActiveTab('home', 'auto');
   }
 }
 
@@ -544,16 +637,20 @@ function setupTableBooking() {
   const sumGuests = document.getElementById('sum-guests');
   const sumDate = document.getElementById('sum-date');
   const sumTime = document.getElementById('sum-time');
+  const mobileSummaryText = document.getElementById('mobile-summary-text');
 
   const bookingModal = document.getElementById('booking-success-modal');
   const modalCloseBtn = document.getElementById('booking-modal-close-btn');
   const doneBtn = document.getElementById('conf-done-btn');
 
-  // Update summary card UI
+  // Update summary card & mobile in-form summary UI
   function updateSummary() {
     if (sumGuests) sumGuests.textContent = `${bookingState.guests} ${bookingState.guests.includes('Guest') ? '' : 'Guests'}`;
     if (sumDate) sumDate.textContent = bookingState.dateFormatted;
     if (sumTime) sumTime.textContent = bookingState.time;
+    if (mobileSummaryText) {
+      mobileSummaryText.textContent = `${bookingState.guests} Guests • ${bookingState.dateFormatted} • ${bookingState.time}`;
+    }
   }
 
   // 1. Guest Selection

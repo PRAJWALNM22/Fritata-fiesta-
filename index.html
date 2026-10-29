@@ -157,9 +157,9 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- HERO SECTION -->
-    <section class="hero" id="hero">
+    <section class="hero mobile-tab-pane" data-tab="home" id="hero">
       <div class="container">
         <div class="hero-grid">
           <!-- Left Column Content -->
@@ -235,7 +235,7 @@
     </section>
 
     <!-- FEATURED SIGNATURE DISHES SECTION -->
-    <section class="featured-section" id="featured-dishes">
+    <section class="featured-section mobile-tab-pane" data-tab="home" id="featured-dishes">
       <div class="container">
         <div class="featured-header-row">
           <div>
@@ -374,11 +374,23 @@
             </div>
           </article>
         </div>
+
+        <!-- Mobile Teaser Banner to Open Full Menu Tab -->
+        <div class="mobile-menu-cta-banner">
+          <div class="cta-banner-content">
+            <span class="cta-banner-badge">🍳 154+ Delicacies Await</span>
+            <h3 class="cta-banner-title">Craving More Egg Creations?</h3>
+            <p class="cta-banner-desc">From Surat Ghotalas to Egg Rolls, Pizzas & High-Protein Bowls — explore our entire digital menu.</p>
+          </div>
+          <a href="#menu-explorer" class="btn btn-primary btn-jump-to-menu">
+            <span>📖 Browse Full 154+ Menu →</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- INTERACTIVE 150+ MENU EXPLORER -->
-    <section class="menu-section" id="menu-explorer">
+    <section class="menu-section mobile-tab-pane" data-tab="menu" id="menu-explorer">
       <div class="container">
         <!-- Section Title -->
         <div style="text-align: center; margin-bottom: 2.5rem;">
@@ -440,9 +452,9 @@
     </section>
 
     <!-- =========================================================================
-         TABLE BOOKING / RESERVATIONS (Razorpay Integration Ready)
+         TABLE BOOKING / RESERVATIONS (Instant Pass & Guaranteed Seating)
          ========================================================================= -->
-    <section class="booking-section" id="table-booking">
+    <section class="booking-section mobile-tab-pane" data-tab="book" id="table-booking">
       <div class="container">
         <!-- Section Header -->
         <div class="booking-header">
@@ -533,9 +545,20 @@
               </div>
             </div>
 
-            <!-- Submit Button Triggering Razorpay Flow -->
+            <!-- Mobile In-Form Live Booking Summary Bar -->
+            <div class="booking-mobile-quick-summary">
+              <div class="quick-summary-pill">
+                <span class="q-icon">🪑</span>
+                <span class="q-text" id="mobile-summary-text">2 Guests • Today • 1:00 PM</span>
+              </div>
+              <div class="quick-deposit-note">
+                <span>Deposit: <strong>₹200</strong> (100% Deducted from your Final Food Bill)</span>
+              </div>
+            </div>
+
+            <!-- Submit Button Triggering Confirmation Pass -->
             <button type="submit" class="btn btn-primary btn-submit-booking" id="submit-booking-btn">
-              <span>💳 Confirm Table Booking & Pay ₹200 Deposit →</span>
+              <span>💳 Confirm Table Booking & Get Instant Pass →</span>
             </button>
           </form>
 
@@ -606,7 +629,7 @@
     </section>
 
     <!-- BRAND STORY & ABOUT SECTION -->
-    <section class="about-section" id="about-story">
+    <section class="about-section mobile-tab-pane" data-tab="info" id="about-story">
       <div class="container">
         <div class="about-grid">
           <!-- Visual Collage -->
@@ -671,7 +694,7 @@
     </section>
 
     <!-- GOOGLE REVIEWS SHOWCASE -->
-    <section class="reviews-section" id="reviews">
+    <section class="reviews-section mobile-tab-pane" data-tab="info" id="reviews">
       <div class="container">
         <!-- Review Rating Header -->
         <div class="reviews-header-card">
@@ -817,7 +840,7 @@
     </section>
 
     <!-- VISIT US / LOCATION & CONTACT SECTION -->
-    <section class="visit-section" id="visit-us">
+    <section class="visit-section mobile-tab-pane" data-tab="info" id="visit-us">
       <div class="container">
         <div style="margin-bottom: 3rem;">
           <div class="section-tag">
@@ -901,7 +924,7 @@
     </section>
 
     <!-- FAQ SECTION -->
-    <section class="faq-section" id="faq">
+    <section class="faq-section mobile-tab-pane" data-tab="info" id="faq">
       <div class="container">
         <div style="text-align: center; margin-bottom: 2.5rem;">
           <div class="section-tag">
@@ -1169,25 +1192,25 @@
     </div>
   </footer>
 
-  <!-- MOBILE BOTTOM STICKY DOCK (Quick Action Bar for Mobile Phones) -->
-  <nav class="mobile-bottom-dock" aria-label="Mobile quick actions">
-    <a href="#hero" class="dock-item" id="dock-home">
+  <!-- MOBILE BOTTOM STICKY DOCK (App-Style Tab Controller) -->
+  <nav class="mobile-bottom-dock" aria-label="Mobile quick navigation tabs">
+    <button type="button" class="dock-item active" data-tab-target="home" id="dock-home">
       <span class="dock-icon">🏠</span>
       <span class="dock-label">Home</span>
-    </a>
-    <a href="#menu-explorer" class="dock-item" id="dock-menu">
+    </button>
+    <button type="button" class="dock-item" data-tab-target="menu" id="dock-menu">
       <span class="dock-icon">🍳</span>
-      <span class="dock-label">Menu</span>
-    </a>
-    <a href="#table-booking" class="dock-item dock-item-highlight" id="dock-book">
+      <span class="dock-label">154+ Menu</span>
+    </button>
+    <button type="button" class="dock-item dock-item-highlight" data-tab-target="book" id="dock-book">
       <span class="dock-icon">🪑</span>
-      <span class="dock-label">Book</span>
-    </a>
-    <a href="https://wa.me/919886012345?text=Hi%20Frittata%20Fiesta%2C%20I%20would%20like%20to%20order%20or%20inquire." target="_blank" rel="noopener noreferrer" class="dock-item" id="dock-whatsapp">
-      <span class="dock-icon">💬</span>
-      <span class="dock-label">WhatsApp</span>
-    </a>
-    <a href="tel:+919886012345" class="dock-item" id="dock-call">
+      <span class="dock-label">Book Table</span>
+    </button>
+    <button type="button" class="dock-item" data-tab-target="info" id="dock-info">
+      <span class="dock-icon">📍</span>
+      <span class="dock-label">Info & Map</span>
+    </button>
+    <a href="tel:+919886012345" class="dock-item" id="dock-call" aria-label="Call Café">
       <span class="dock-icon">📞</span>
       <span class="dock-label">Call</span>
     </a>
